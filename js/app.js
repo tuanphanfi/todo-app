@@ -26,7 +26,7 @@ function renderItem(item, index) {
         html += `<input type="checkbox" onclick="toggleStatus(${index})">Undone `
     html += item.content
     // add delete button
-    html += `<button onclick="deleteItem(${index})">Delete</button>`
+    html += `<button class="btn btn-danger" onclick="deleteItem(${index})">Delete</button>`
     html += "</li>"
     return html
 }
